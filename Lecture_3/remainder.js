@@ -1,6 +1,8 @@
 let a=20
 let b=10
+let c=5
 
-c=a%b;
+let add = a+ b;
+let rem = add%c;
 
-console.log(c);
+console.log(rem);
