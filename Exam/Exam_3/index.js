@@ -1,7 +1,9 @@
+let users = []
+
 const Emp = () =>
 {
     document.getElementById('tbody').innerHTML = ''
-
+    let totalSalary = 0
     for(let i=0 ; i<users.length ; i++)
     {
         let tr = document.createElement('tr')
@@ -25,15 +27,19 @@ const Emp = () =>
             td5.innerHTML = 'sen'; 
         }
         let td6 = document.createElement('td')
+        totalSalary += parseFloat(users[i].salary)
         td6.innerHTML = users[i].salary
 
 
         tr.append(td,td1,td2,td3,td4,td5,td6)
         document.getElementById('tbody').append(tr)
     }
+
+    document.getElementById('totalEmp').innerText = `Total Emp :  ${users.length}`
+    document.getElementById('totalSalary').innerText = `Total Salary :  ${totalSalary}`
 }
 
-let users = []
+
 
 
 const handleEmpData = (event) =>
