@@ -27,7 +27,7 @@ const Emp = () =>
             td5.innerHTML = 'sen'; 
         }
         let td6 = document.createElement('td')
-        totalSalary += parseFloat(users[i].salary)
+        totalSalary += Number(users[i].salary)
         td6.innerHTML = users[i].salary
 
 
