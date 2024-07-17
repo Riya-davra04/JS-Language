@@ -4,12 +4,13 @@ const Delete = (index) =>
 {
     users.splice(index,1);
     uimaker();
+    
 };
 
 const AllRemove =() =>
 {
     users = [];
-    uimaker();
+    document.getElementById('tbody').innerHTML = ''
 };
 const uimaker = () => {
     document.getElementById('tbody').innerHTML = ''
@@ -25,16 +26,10 @@ const uimaker = () => {
         td3.innerHTML = users[i].email;
         let td4 = document.createElement('td')
         td4.innerHTML = users[i].salary;
-        totalsalary += parseFloat(users[i].salary);
+        totalsalary += Number(users[i].salary);
         let td5 =document.createElement('td')
         td5.innerHTML = "remove";
         td5.addEventListener("click",() => Delete(i));
-        // let td6 = document.createElement('td')
-        if(i==0)
-        {
-            td5.innerHTML = "Delete All";
-            td5.addEventListener("click", AllRemove);
-        }
        
         tr.append(td1,td2,td3,td4,td5)
         document.getElementById('tbody').append(tr)
@@ -67,3 +62,4 @@ const handleData = (event) =>
 }
 
 document.getElementById('userData').addEventListener("submit",handleData)
+document.getElementById('delete').addEventListener("click",AllRemove)
