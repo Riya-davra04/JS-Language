@@ -2,16 +2,15 @@ body {
     background-color: white;
     display: flex;
     justify-content: center;
-    align-items: center; 
     text-align: center;
     height: 50%;
     margin: 10%;
 }
 
 form {
-    background:white;
-    padding: 20px;
+    background: white;
     border-radius: 8px;
+    font-size: 20px;
 }
 
 table {
@@ -19,26 +18,26 @@ table {
 }
 
 
-td{
-    padding: 10px ;
+td {
+    padding: 10px;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="password"]
-{
+input[type="password"] {
     width: 100%;
     padding: 2%;
     margin-top: 0;
- }
+}
 
 input[type="submit"] {
     height: 100%;
     width: 100%;
     padding: 5%;
-    background-color:green;
+    background-color: rgb(65, 237, 65);
     color: white;
 }
+
 input[type="submit"]:hover {
-    background-color:lightgreen;
+    background-color: green;
 }

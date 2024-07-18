@@ -13,15 +13,15 @@ const HandleData = (e) => {
         password: password
     }
 
-    if (user.username.length < 2) {
+    if (username.length < 2) {
         alert("Please enter a valid name");
         return;
     }
-    if (user.number.length != 10) {
+    if (number.length != 10) {
         alert("Please enter a valid phone number");
         return;
     }
-    if (user.password.length < 6) {
+    if (password.length < 6) {
         alert("Please enter a valid password");
         return;
     }
