@@ -1,0 +1,44 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    height: 50%;
+    margin: 10%;
+}
+
+form {
+    background:white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+}
+
+
+td{
+    padding: 10px ;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]
+{
+    width: 100%;
+    padding: 2%;
+    margin-top: 0;
+ }
+
+input[type="submit"] {
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+    background-color:green;
+    color: white;
+}
+input[type="submit"]:hover {
+    background-color:lightgreen;
+}
