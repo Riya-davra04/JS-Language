@@ -8,13 +8,13 @@ const Delete = (index) => {
 };
 
 const FeeAmount = (course) => {
-    if (course === "DataScience") {
+    if (course == "DataScience") {
         return 75000;
-    } else if (course === "AI") {
+    } else if (course == "AI") {
         return 60000;
-    } else if (course === "CyberSecurity") {
+    } else if (course == "CyberSecurity") {
         return 45000;
-    } else if (course === "WebDevloper") {
+    } else if (course == "WebDevloper") {
         return 105000;
     } else {
         return 0;
