@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <link rel="stylesheet" href="./index.css">
+    <form id="userData">
+        <table >
+            <tr>
+                <td>Name :<br><br></td>
+                <td><input type="text" id="name" placeholder="Enter Name" required><br><br></td>
+            </tr>
+            <tr>
+                <td>GR ID :<br><br></td>
+                <td><input type="number" id="grid" placeholder="Enter GR_ID" required><br><br></td>
+            </tr>
+            <tr>
+                <td>Course :<br><br></td>
+                <td><select name="" id="course" >
+                    <option value=""></option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="AI">AI</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="Web Devloper">Web Devloper</option>
+                  </select><br><br></td>
+            </tr>
+            <tr>
+                <td>Number :<br><br></td>
+                <td><input type="number" id="number" placeholder="Enter number" required><br><br></td>
+            </tr>
+            <tr>
+                <td>Fees :<br><br></td>
+                <td><select name="" id="fees" >
+                    <option value=""></option>
+                    <option value="Data Science - 75000">Data Science - 75000</option>
+                    <option value="AI - 60000">AI - 60000</option>
+                    <option value="Cyber Security - 45000">Cyber Security - 45000</option>
+                    <option value="Web Devloper - 105000">Web Devloper - 105000</option>
+                  </select><br><br></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+            <table border="1px solid black" cellpadding="10px">
+                <thead>
+                    <tr>
+                        <th scope="101">Name </th>
+                        <th scope="101"> GR ID </th>
+                        <th scope="101"> Course </th>
+                        <th scope="101"> Number </th>
+                        <th scope="101"> Fees </th>
+                        <th scope="101">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+        
+            </table>
+            <br><br><br><br>
+            <table border="1px solid black" cellpadding="10px">
+                <thead id="Sales">
+                    <tr>
+                        <th scope="101">Course </th>
+                        <th scope="101"> Count </th>
+                        <th scope="101"> Total fees </th>
+                    </tr>
+                </thead>
+                <tbody id="body">
+                </tbody>
+        
+            </table>
+</body>
+<script src="./index.js"></script>
+</html>
