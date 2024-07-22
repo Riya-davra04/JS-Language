@@ -62,16 +62,16 @@ const Sales = () => {
         let course = users[i].course;
         let fee = FeeAmount(course);
 
-        if (course === "DataScience") {
+        if (course == "DataScience") {
             dataScienceCount++;
             dataScienceTotalFees += fee;
-        } else if (course === "AI") {
+        } else if (course == "AI") {
             aiCount++;
             aiTotalFees += fee;
-        } else if (course === "CyberSecurity") {
+        } else if (course == "CyberSecurity") {
             cyberSecurityCount++;
             cyberSecurityTotalFees += fee;
-        } else if (course === "WebDevloper") {
+        } else if (course == "WebDevloper") {
             webDeveloperCount++;
             webDeveloperTotalFees += fee;
         }
