@@ -76,10 +76,6 @@ const Sales = () => {
             webDeveloperTotalFees += fee;
         }
     }
-
-    
-    let tbody = document.getElementById('body');
-
    
     let tr1 = document.createElement('tr');
     let td1_1 = document.createElement('td');
@@ -89,7 +85,7 @@ const Sales = () => {
     let td3_1 = document.createElement('td');
     td3_1.innerHTML = dataScienceTotalFees;
     tr1.append(td1_1, td2_1, td3_1);
-    tbody.append(tr1);
+    body.append(tr1);
 
 
     let tr2 = document.createElement('tr');
@@ -100,7 +96,7 @@ const Sales = () => {
     let td3_2 = document.createElement('td');
     td3_2.innerHTML = aiTotalFees;
     tr2.append(td1_2, td2_2, td3_2);
-    tbody.append(tr2);
+    body.append(tr2);
 
   
     let tr3 = document.createElement('tr');
@@ -111,7 +107,7 @@ const Sales = () => {
     let td3_3 = document.createElement('td');
     td3_3.innerHTML = cyberSecurityTotalFees;
     tr3.append(td1_3, td2_3, td3_3);
-    tbody.append(tr3);
+    body.append(tr3);
 
  
     let tr4 = document.createElement('tr');
@@ -122,7 +118,7 @@ const Sales = () => {
     let td3_4 = document.createElement('td');
     td3_4.innerHTML = webDeveloperTotalFees;
     tr4.append(td1_4, td2_4, td3_4);
-    tbody.append(tr4);
+    body.append(tr4);
 };
 
 const HandleData = (e) => {
@@ -156,11 +152,11 @@ const HandleData = (e) => {
         return;
     }
     if (course.length <= 0) {
-        alert("Please enter a valid Course");
+        alert("Please select a Course");
         return;
     }
     if (fees.length <= 0) {
-        alert("Please enter a valid Fees");
+        alert("Please select CourseFees");
         return;
     }
 
