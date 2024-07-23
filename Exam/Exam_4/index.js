@@ -85,8 +85,7 @@ const Sales = () => {
     let td3_1 = document.createElement('td');
     td3_1.innerHTML = dataScienceTotalFees;
     tr1.append(td1_1, td2_1, td3_1);
-    body.append(tr1);
-
+   document.getElementById('body').append(tr1)
 
     let tr2 = document.createElement('tr');
     let td1_2 = document.createElement('td');
@@ -96,8 +95,7 @@ const Sales = () => {
     let td3_2 = document.createElement('td');
     td3_2.innerHTML = aiTotalFees;
     tr2.append(td1_2, td2_2, td3_2);
-    body.append(tr2);
-
+    document.getElementById('body').append(tr2)
   
     let tr3 = document.createElement('tr');
     let td1_3 = document.createElement('td');
@@ -107,9 +105,8 @@ const Sales = () => {
     let td3_3 = document.createElement('td');
     td3_3.innerHTML = cyberSecurityTotalFees;
     tr3.append(td1_3, td2_3, td3_3);
-    body.append(tr3);
+    document.getElementById('body').append(tr3)
 
- 
     let tr4 = document.createElement('tr');
     let td1_4 = document.createElement('td');
     td1_4.innerHTML = "WebDevloper";
@@ -118,7 +115,7 @@ const Sales = () => {
     let td3_4 = document.createElement('td');
     td3_4.innerHTML = webDeveloperTotalFees;
     tr4.append(td1_4, td2_4, td3_4);
-    body.append(tr4);
+    document.getElementById('body').append(tr4)
 };
 
 const HandleData = (e) => {
