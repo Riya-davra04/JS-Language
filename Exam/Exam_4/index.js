@@ -148,7 +148,7 @@ const HandleData = (e) => {
         return;
     }
     if (grid.length != 4) {
-        alert("Please enter a valid GR _ID");
+        alert("Please enter only 4 number GR _ID");
         return;
     }
     if (course.length <= 0) {
