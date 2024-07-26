@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Form</title>
+    <style>
+        h1 {
+            text-align: center;
+            color:black;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 3%;
+            margin: 2%;
+            box-sizing: border-box;
+            border: 1px solid #c8bebe;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            padding: 2%;
+            border-radius: 4px;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(66, 138, 66);
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="StudentData">
+        <table>
+            <h1>Student Form</h1>
+            <tr>
+                <td>Name :<br><br></td>
+                <td><input type="text" id="name" placeholder="Enter Name" required><br><br></td>
+            </tr>
+            <tr>
+                <td>Number :<br><br></td>
+                <td><input type="number" id="number" placeholder="Enter Number" required><br><br></td>
+            </tr>
+            <tr>
+                <td>Email :<br><br></td>
+                <td><input type="email" id="email" placeholder="Enter Email" required><br><br></td>
+            </tr>
+            <tr>
+                <td>Gender :<br><br></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required> Male
+                    <input type="radio" id="female" name="gender" value="female"> Female
+                    <input type="radio" id="other" name="gender" value="other"> Other
+                    <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobby :<br><br></td>
+                <td>
+                    <input type="checkbox" id="Reading" name="hobby" value="Reading"> Reading
+                    <input type="checkbox" id="Traveling" name="hobby" value="Traveling"> Traveling
+                    <input type="checkbox" id="Drawing" name="hobby" value="Drawing"> Drawing
+                    <input type="checkbox" id="Photography" name="hobby" value="Photography"> Photography
+                    <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>City :<br><br></td>
+                <td>
+                    <select id="city" required>
+                        <option value=""></option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Surat">Surat</option>
+                        <option value="Vadodara">Vadodara</option>
+                        <option value="Rajkot">Rajkot</option>
+                        <option value="Bhavnagar">Bhavnagar</option>
+                        <option value="Gandhinagar">Gandhinagar</option>
+                    </select>
+                    <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script src="index.js">
+
+</script>
+
+</html>
