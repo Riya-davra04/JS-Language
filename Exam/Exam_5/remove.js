@@ -1,17 +1,17 @@
-let array = [1, 2, 2, 3, 4, 4, 5]
-let newArray=[]
-let n= array.length;
+let array = [1, 2, 2, 3, 4, 4, 5];
+let newArray = [];
 
-array.sort((a, b) => a - b);
-
-if (n > 0) {
-    newArray[0] = array[0];
-}
-
-for (let i = 1; i < n; i++) {
-    if (array[i] != newArray[newArray.length - 1]) {
-        newArray[newArray.length] = array[i];
+for (let i = 0; i < array.length; i++) {
+    let Duplicate = false;
+    for (let j = 0; j < newArray.length; j++) {
+        if (array[i] === newArray[j]) {
+            Duplicate = true;
+          
+        }
+    }
+    if (!Duplicate) {
+        newArray.push(array[i]);
     }
 }
 
-console.log(newArray); 
+console.log(newArray);
