@@ -2,7 +2,6 @@ class Admin {
     constructor(name) {
         this.name = name;
         this.salary = 0; 
-        this.leaveStatus = 'none'; 
     }
 
     giveSalary(amount) {
@@ -60,7 +59,7 @@ class Employee extends Admin {
     }
 }
 
-let a = new Admin('admin', 5000);
+let a = new Admin('admin');
 a.giveSalary(20000);
 a.rejectManagerLeave();
 
