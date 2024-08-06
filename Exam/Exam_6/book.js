@@ -54,24 +54,26 @@ class Book
         this.#copiesAvailable=copiesAvailable;
     }
 
-    buyBook(copies)
+    buyBook(copies,bookprice)
     {
         if(this.#copiesAvailable>0)
         {
-            this.#copiesAvailable--;
-            console.log(`${this.title} Book purchased`);
+            this.#copiesAvailable-=copies;
+            this.#price+=bookprice;
+            console.log(`${this.title} Book purchased and book price is ${this.#price}`);
         }
         else
         {
             console.log("Sorry! copies are not available");
         }
     }
-    rentBook()
+    rentBook(copies,retprice)
     {
         if(this.#copiesAvailable>0)
-            {
-                this.#copiesAvailable--;
-                console.log(`${this.title} Book rented `);
+        {
+            this.#copiesAvailable-=copies;
+            this.#rentalPrice+=retprice;
+            console.log(`${this.title} Book rented and book rentprice is ${this.#rentalPrice}`);
             }
             else
             {
@@ -79,9 +81,9 @@ class Book
             }
     }
 
-    returnBook()
+    returnBook(copies)
     {
-        this.#copiesAvailable++;
+        this.#copiesAvailable+=copies;
         console.log(`${this.title} Book is return`);
     }
 
@@ -98,11 +100,11 @@ console.log("Price :",book.getprice());
 console.log("RentalPrice : ",book.getrentalPrice());
 console.log("CopiesAvailable : ",book.getcopiesAvailable());
 
-book.buyBook();
+book.buyBook(2,350);
 book.checkAvailability();
 
-book.rentBook();
+book.rentBook(2,100);
 book.checkAvailability();
 
-book.returnBook();
-book.checkAvailability();
+book.returnBook(3);
+book.checkAvailability();``
