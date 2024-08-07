@@ -28,18 +28,26 @@
             font-size: 20px;
             font-size: medium;
         }
+        th
+        {
+            padding: 20px;
+            font-size: 25px;
+            background-color: rgb(220, 206, 220);
+        }
     </style>
 </head>
 <body>
     <img src="d.jpg" alt="Dragon Image">
-    <form>
-        <table border="1">
+    <br>
+    <br>
+    <form id="userData">
+        <table border="2">
             <tr>
-                <td>Name:</td>
+                <td>Name</td>
                 <td><input type="text" name="name" id="name" placeholder="Enter Name"></td>
             </tr>
             <tr>
-                <td>Colour:</td>
+                <td>Colour</td>
                 <td>
                     <select id="colour">
                         <option value=""></option>
@@ -51,15 +59,15 @@
                 </td>
             </tr>
             <tr>
-                <td>Size:</td>
+                <td>Size</td>
                 <td>
-                    <input type="checkbox" name="size" value="Small">Small
-                    <input type="checkbox" name="size" value="Medium">Medium
-                    <input type="checkbox" name="size" value="Large">Large
+                    <input type="radio" id="Small" name="size" value="Small">Small
+                    <input type="radio" id="Medium" name="size" value="Medium">Medium
+                    <input type="radio" id="Large" name="size" value="Large">Large
                 </td>
             </tr>
             <tr>
-                <td>Price:</td>
+                <td>Price</td>
                 <td>
                     <select id="price">
                         <option value=""></option>
@@ -71,7 +79,7 @@
                 </td>
             </tr>
             <tr>
-                <td>Quantity:</td>
+                <td>Quantity</td>
                 <td>
                     <select id="quantity">
                         <option value=""></option>
@@ -89,24 +97,27 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2"><input type="submit" value="Submit"></td>
+                <td colspan="2"><input type="submit"></td>
             </tr>
         </table>
     </form>
-
-    <table border="2">
+    <br>
+    <table border="3">
         <thead>
-            <tbody>
+            
                 <tr>
-                <th>Name</th>
-                <th>Colour</th>
-                <th>Size</th>
-                <th>Price</th>
-                <th>Quantity</th>
+                <th scope="101">Name</th>
+                <th scope="101">Colour</th>
+                <th scope="101">Size</th>
+                <th scope="101">Price</th>
+                <th scope="101">Quantity</th>
+                <th scope="101">Delete</th>
             </tr>
-        </tbody>
+            <tbody id="tbody"></tbody>
+
         </thead>
         
     </table>
 </body>
+<script src="dragon.js"></script>
 </html>
