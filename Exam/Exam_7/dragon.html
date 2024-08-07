@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon</title>
+    <style>
+         img {
+            height: 400px;
+            width: 100%;
+        }
+        form {
+           justify-content: center;
+           display: flex;
+           font-style: normal;
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: rgb(232, 207, 232);
+        }
+       
+        table {
+           flex: 2;
+           font-size: 20px;
+        }
+        td {
+            padding: 10px;
+        }
+        input[type="submit"] {
+            font-size: 20px;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <img src="d.jpg" alt="Dragon Image">
+    <form>
+        <table border="1">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" id="name" placeholder="Enter Name"></td>
+            </tr>
+            <tr>
+                <td>Colour:</td>
+                <td>
+                    <select id="colour">
+                        <option value=""></option>
+                        <option value="Purple">Purple</option>
+                        <option value="Red">Red</option>
+                        <option value="Orange">Orange</option>
+                        <option value="Green">Green</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Size:</td>
+                <td>
+                    <input type="checkbox" name="size" value="Small">Small
+                    <input type="checkbox" name="size" value="Medium">Medium
+                    <input type="checkbox" name="size" value="Large">Large
+                </td>
+            </tr>
+            <tr>
+                <td>Price:</td>
+                <td>
+                    <select id="price">
+                        <option value=""></option>
+                        <option value="Purple = 699">Purple = 699</option>
+                        <option value="Red = 550">Red = 550</option>
+                        <option value="Orange = 899">Orange = 899</option>
+                        <option value="Green = 450">Green = 450</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Quantity:</td>
+                <td>
+                    <select id="quantity">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+
+    <table border="2">
+        <thead>
+            <tbody>
+                <tr>
+                <th>Name</th>
+                <th>Colour</th>
+                <th>Size</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </tbody>
+        </thead>
+        
+    </table>
+</body>
+</html>
