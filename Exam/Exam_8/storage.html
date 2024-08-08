@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+    <style>
+        form
+        {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+        }
+
+        input[type="submit"]
+        {
+            font-size: 30px;
+        }
+        table
+        {
+            flex: 2;
+            font-size: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <form id="student">
+        <table border="1">
+            <tr>
+                <td>Name  <br><br></td>
+                <td><input type="text" id="name" placeholder="Enter Name" required><br><br></td>
+            </tr>
+            <tr>
+                <td>Roll No <br><br></td>
+                <td><input type="number" id="rnumber" placeholder="Enter Roll NO" required><br><br></td>
+            </tr>
+            <tr>
+                <td>Email <br><br></td>
+                <td><input type="email" id="mail" placeholder="Enter Email" required><br><br></td>
+            </tr>
+            <tr>
+                <td>Age <br><br></td>
+                <td><input type="number" id="age" placeholder="Enter Age" required><br><br></td>
+            </tr>
+            <tr>
+                <td>School <br><br></td>
+                <td><input type="text" id="school" placeholder="Enter School" required><br><br></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit"></td>
+            </tr>
+        </table>
+    </form>  
+
+    <table border="3" cellpadding="20px">
+        <thead>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>School</th>
+        </thead>
+    </table>
+</body>
+<script src="./storage.js"></script>
+
+</html>
