@@ -1,44 +1,44 @@
 
-let users = []
-
-
 const Student = () => {
-    document.getElementById('tbody').innerHTML = ''
-    for (let i = 0; i < users.length; i++) {
-        let tr = document.createElement('tr')
-        let td1 = document.createElement('td')
-        td1.innerHTML = users[i].name
-        let td2 = document.createElement('td')
-        td2.innerHTML = users[i].rnumber
-        let td3 = document.createElement('td')
-        td3.innerHTML = users[i].mail
-        let td4 = document.createElement('td')
-        td4.innerHTML = users[i].age
-        let td5 = document.createElement('td')
-        td5.innerHTML = users[i].school
+    document.getElementById('tbody').innerHTML = '';
 
-        tr.append(td1, td2, td3, td4, td5)
-        document.getElementById('tbody').append(tr)
+    for (let i = 0; i < localStorage.length; i++) {
+        let key = localStorage.key(i);
+
+        if (key.startsWith('name_')) {
+            let rnumber = key.split('_')[1];
+
+            let name = localStorage.getItem('name_' + rnumber);
+            let mail = localStorage.getItem('mail_' + rnumber);
+            let age = localStorage.getItem('age_' + rnumber);
+            let school = localStorage.getItem('school_' + rnumber);
+
+            let tr = document.createElement('tr');
+            let td1 = document.createElement('td');
+            td1.innerHTML = name;
+            let td2 = document.createElement('td');
+            td2.innerHTML = rnumber;
+            let td3 = document.createElement('td');
+            td3.innerHTML = mail;
+            let td4 = document.createElement('td');
+            td4.innerHTML = age;
+            let td5 = document.createElement('td');
+            td5.innerHTML = school;
+
+            tr.append(td1, td2, td3, td4, td5);
+            document.getElementById('tbody').append(tr);
+        }
     }
 }
 
 const HandleData = (e) => {
     e.preventDefault();
 
-
     let name = document.getElementById('name').value;
     let rnumber = document.getElementById('rnumber').value;
     let mail = document.getElementById('mail').value;
     let age = document.getElementById('age').value;
     let school = document.getElementById('school').value;
-
-    let user = {
-        name: name,
-        rnumber: rnumber,
-        mail: mail,
-        age: age,
-        school: school
-    }
 
     if (name.length < 2) {
         alert("Please enter a valid name");
@@ -57,9 +57,15 @@ const HandleData = (e) => {
         return;
     }
 
-    users.push(user);
-    console.log(user)
+    localStorage.setItem('name_' + rnumber, name);
+    localStorage.setItem('mail_' + rnumber, mail);
+    localStorage.setItem('age_' + rnumber, age);
+    localStorage.setItem('school_' + rnumber, school);
+
     Student();
 }
 
-document.getElementById('stu').addEventListener("submit", HandleData)
+
+document.getElementById('stu').addEventListener("submit", HandleData);
+
+document.addEventListener('DOMContentLoaded', Student);
