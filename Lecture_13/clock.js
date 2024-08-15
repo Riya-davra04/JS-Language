@@ -34,4 +34,5 @@ setInterval(() => {
     document.getElementById("hrs").innerHTML = hours + ":" + minutes + ":" + seconds + " " + am_pm; 
     document.getElementById("d").innerHTML = date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
     document.getElementById("day").innerHTML = days[date.getDay()];
+    
 }, 1000);
