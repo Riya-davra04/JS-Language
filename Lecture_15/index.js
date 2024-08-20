@@ -1,12 +1,11 @@
-
- rollDice = () => {
+const rollDice = () => {
     let dice = document.getElementById('dice');
     let randomNumber = Math.floor(Math.random() * 6) + 1;
     
     let current = 1;
     let intervalId = setInterval(() => {
         dice.textContent = current;
-        currentFace = current % 6 + 1; 
+        current = current % 6 + 1; 
     }, 30);
     
     setTimeout(() => {
