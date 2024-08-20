@@ -5,12 +5,12 @@ let counters = {
     twitter: 0
 };
 
-function incrementCounter(platform) {
+ incrementCounter = (platform) => {
     counters[platform]++;
     document.getElementById(platform + '-counter').innerText = counters[platform];
 }
 
-function startCounter(platform, delay) {
+startCounter = (platform, delay) => {
     setTimeout(function() {
         setInterval(function() {
             incrementCounter(platform);
