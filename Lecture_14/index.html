@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Counters</title>
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+        }
+
+        #counters {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            text-align: center;
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2{
+            margin: 10px 0;
+            color: white;
+        }
+
+        h3 {
+            font-size: 30px;
+            margin: 10px 0;
+        }
+
+       
+        #insta-counter {
+            color: rgb(255, 10, 161);
+        }
+
+        #snap-counter {
+            color: rgb(238, 255, 0); 
+        }
+
+        #fb-counter {
+            color: rgb(61, 61, 241); 
+        }
+
+        #twitter-counter {
+            color: rgb(3, 188, 249); 
+        }
+    </style>
+</head>
+<body>
+    <div id="counters">
+        <div>
+            <h2>Instagram</h2>
+            <h3 id="insta-counter">0</h3>
+        </div>
+        <div>
+            <h2>Snapchat</h2>
+            <h3 id="snap-counter">0</h3>
+        </div>
+        <div>
+            <h2>Facebook</h2>
+            <h3 id="fb-counter">0</h3>
+        </div>
+        <div>
+            <h2>Twitter</h2>
+            <h3 id="twitter-counter">0</h3>
+        </div>
+    </div>
+
+    
+</body>
+<script src="./index.js"></script>
+</html>
