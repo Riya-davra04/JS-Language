@@ -14,7 +14,7 @@ document.getElementById("l").addEventListener("click",HandleInstaLike)
 
 
 let comment = sessionStorage.getItem("comment") || 0 ;
-document.getElementById("comment").innerHTML = like;
+document.getElementById("comment").innerHTML = comment;
 
 const HandleInstaComment = () => {
     comment++;
