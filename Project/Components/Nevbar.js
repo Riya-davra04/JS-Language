@@ -15,19 +15,19 @@ const Navbar = () => {
                         <a class="nav-link active" aria-current="page" href="/Project/Home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Project/Pages/Product.html">product</a>
+                        <a class="nav-link active" aria-current="page"" href="/Project/Pages/Product.html">product</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Project/Pages/addProduct.html">addProduct</a>
+                        <a class="nav-link active" aria-current="page"" href="/Project/Pages/addProduct.html">addProduct</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Project/Pages/Cart.html">cart</a>
+                        <a class="nav-link active" aria-current="page"" href="/Project/Pages/Cart.html">cart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Project/Pages/Login.html">login</a>
+                        <a class="nav-link active" aria-current="page"" href="/Project/Pages/Login.html">login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Project/Pages/SignUp.html">signup</a>
+                        <a class="nav-link active" aria-current="page"" href="/Project/Pages/SignUp.html">signup</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
