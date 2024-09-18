@@ -14,37 +14,32 @@
 
 <body>
     <div class="container-fluid">
-        <div id="navbar">
-
-        </div>
-
-        <div>
-            <form class="w-25" id="userData">
-
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control name" id="floatingname" placeholder="Name">
-                    <label for="floatingUsername">Name</label>
-                </div>  
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control email" id="floatingInput" placeholder="name@example.com" />
-                    <label for="floatingInput">Email address</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="number" class="form-control phno" id="floatingphno" placeholder="Phone Number">
-                    <label for="floatingphno">Phone Number</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control course" id="floatingcourse" placeholder="Course">
-                    <label for="floatingcourse">Course</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="number" class="form-control fee" id="floatingfee" placeholder="Fee">
-                    <label for="floatingfee">Fee</label>
-                </div>
-                <input type="submit">
-            </form>
-        </div>
-
+        <div id="navbar"></div>
+        <h1>Student Registration</h1>
+        <form id="student-form">
+          <div class="mb-3">
+            <label for="floatingname" class="form-label">Name</label>
+            <input type="text" class="form-control" id="floatingname" placeholder="Name">
+          </div>
+          <div class="mb-3">
+            <label for="floatingInput" class="form-label">Email</label>
+            <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <label for="floatingphno" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="floatingphno" placeholder="Phone Number">
+          </div>
+          <div class="mb-3">
+            <label for="floatingcourse" class="form-label">Course</label>
+            <input type="text" class="form-control" id="floatingcourse" placeholder="Course">
+          </div>
+          <div class="mb-3">
+            <label for="floatingfee" class="form-label">Fee</label>
+            <input type="number" class="form-control" id="floatingfee" placeholder="Fee">
+      </div>
+      <button type="submit" >Register</button>
+    </form>
+  </div>
     </div>
 </body>
 
