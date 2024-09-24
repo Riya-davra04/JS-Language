@@ -1,5 +1,5 @@
 
-import { createTag } from "../components/helper.js";
+import getValue,{ createTag } from "../Components/helper.js";
 import Navbar from "../Components/Nevbar.js";
 
 document.getElementById("navbar").innerHTML = Navbar()
